@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: "Inter", sans-serif;
+}
+
+.main-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2em 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2 {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 150px;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+form * {
+  border-radius: 0.5em;
+  padding: 1em;
+  border: none;
+  font-size: inherit;
+}
+
+textarea,
+button {
+  grid-column-end: span 2;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 3px solid #28a9f1;
+}
+
+button {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #28a9f1;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.endorsements-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 1em;
+}
+
+.endorsement {
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.to,
+.from {
+  font-weight: 700;
+}
+
+.last-line {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-icon {
+  cursor: pointer;
+  width: 20px;
+}
+
+.red {
+  filter: invert(21%) sepia(66%) saturate(6376%) hue-rotate(354deg)
+    brightness(92%) contrast(125%);
+}
